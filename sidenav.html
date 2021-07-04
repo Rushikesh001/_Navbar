@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        .navbar{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            margin: 0;
+            position: fixed;
+            z-index: 1;
+            
+        }
+        .navbar a{
+
+           padding-left: 10px;
+            width: 100px;
+            margin-top: 0px;
+            height: 70px;
+        }
+
+
+.nav{
+    width:120px;
+}
+        .nav{
+            background: linear-gradient(to right, lightblue 50%, white 50%);
+            background-size: 200% 100%;
+            background-position: right bottom;
+            transition: all .5s ease-in-out;
+            backface-visibility: hidden
+            
+        }
+        .nav:hover{
+            background-position: left bottom;
+            
+        }
+        .navbar:hover{
+            box-shadow: 5px 10px 10px;
+        }
+       .main_container {
+           margin-left: 120px;
+           
+       }
+       .blank{
+           background-color: white;
+           height: 100px;
+       }
+       .insert{
+            margin-top: 50px;
+            margin-left: 250px;
+            
+       }
+       #url{
+border-color: white;
+border-radius: 10px;
+height: 35px;
+width: 700px;
+       }
+       .container{
+           height: 555px;
+        background-color: #E6E6E6;
+       }
+
+.or{
+    margin-top: 30px;
+    margin-left: 580px;
+    margin-bottom: 5px;
+}
+
+       .upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.video{
+padding-top: 50px;
+    margin-left: 110px;
+}
+
+.btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 80px 40px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 250px;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+img{
+    margin: 15px;
+    height: 50px;
+    width: 50px;
+    
+}
+
+.span1{
+    padding-left: 15px;
+}
+    </style>
+</head>
+<body style="margin: 0;">
+    
+    <nav class="navbar">
+    <div>
+        <span style="height: 160px; padding-left: 15px;"><img src="7.png" alt="LOGO" >
+        </span>
+    </div >
+        <div class="nav">  
+        <a href="#" ><img src="6.png" alt="Students"></a>
+        <span class="span1">Students</span>
+    </div>
+        <div class="nav">
+        <a href="#" ><img src="4.png" alt="Lesson Plan"></a>
+            <span class="span1">Lesson Plan</span>
+    </div>
+        <div class="nav">
+        <a href="#" > <img src="5.png" alt="setting">
+        </a>
+        <span class="span1">Settings</span>                        
+    </div>
+    </nav>
+
+    <div class="main_container" >
+        <div class="blank">
+
+        </div>
+        <div class="container" >
+            <div class="video">
+                <span style="color: grey;">
+                    <img src="arrow.jpg" alt="arrow" style="height: 10px; width: 10px;">
+                    videos</span>
+            </div>
+            <div class="insert">
+                <input type="text" placeholder="Insert URL here" id="url">
+            </div>
+            <div class="or">
+                <span>or</span>
+            </div>
+            <div class="upload">
+                <div class="upload-btn-wrapper">
+                    <button class="btn">Upload </button>
+                    <input type="file" name="myfile" />
+                  </div>
+
+            </div>
+        </div>
+        
+    </div>
+
+    
+</body>
+</html>
